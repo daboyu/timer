@@ -1,0 +1,38 @@
+// Clock
+
+.clock {
+  text-align: 0;
+}
+
+.clock-time {
+  display: inline-block;
+  width: 2em;
+
+  margin-top: 14px;
+  margin-bottom: 14px;
+
+  border: none;
+  border-bottom: 2px solid $white;
+
+  color: $white;
+  background: transparent;
+  font-family: 'Orbitron', sans-serif;
+
+  text-align: center;
+
+  &:disabled {
+    border-bottom-color: transparent;
+
+    color: $white;
+    background: transparent;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.split {
+    width: 0.5em;
+    border: none;
+  }
+}
